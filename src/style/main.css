@@ -199,3 +199,69 @@
         list-style: none;
         font-size: 1.8rem;
     }
+    
+    .projects-container {
+        width: 100%;
+        height: auto;
+        padding: 2.6rem 0;
+        background: var(--white);
+    }
+    
+    .projects-container__title {
+        width: 90%;
+        height: auto;
+        margin: 0 auto 3.2rem;
+        font-size: 2.8rem;
+    }
+    
+    .projects-container__slider {
+        width: 100%;
+        height: auto;
+    }
+    
+    .slider__card {
+        position: relative;
+        width: 65%;
+        max-width: 30rem;
+        height: 32rem;
+        margin: 1.8rem auto;
+        display: block;
+        border: 2px solid var(--light-blue);
+    }
+    /* .slider__card::after {
+        content: "";
+        position: absolute;
+        top: -1rem;
+        right: -3rem;
+        transform: rotate(45deg);
+        width: 8rem;
+        height: 4rem;
+        background: var(--white);
+    } */
+    
+    .slider__card--data {
+        position: absolute;
+        top: calc(50% - 2.5rem);
+        left: -4rem;
+        width: 100%;
+        height: auto;
+        color: var(--dark-blue);
+    }
+    
+    .data--name {
+        font-size: 1.8rem;
+    }
+    
+    .data--detail {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.3rem;
+    }
+    
+    .data--detail p {
+        font-weight: bold;
+    }
+    
+    .data--detail p span {
+        font-weight: 200;
+    }
