@@ -1,0 +1,28 @@
+:root {
+    --black: #111111;
+    --dark-gray: #5E5E5E;
+    --light-gray: #93aac2;
+    --white: #FAFAFA;
+    --dark-blue: #0A0B23;
+    --light-blue: #00f0ff;
+    --purple: #A319FF;
+    --dark-gradient: linear-gradient(90deg, #00f0ff, #0a0b23);
+    --light-gradient: linear-gradient(90deg, #00f0ff, #a319ff);
+    --white-gradient: linear-gradient(147deg, #fafafa 0%, #93aac2 100%);
+    --black-gradient: linear-gradient(135deg, #0a0b23 0%, #111111 100%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+    background: var(--black-gradient);
+}
