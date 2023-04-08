@@ -6,6 +6,7 @@
 5. Otros */
     
     @import url("vars.css");
+    @import url("global.css");
     header {
         width: 100%;
         height: 6rem;
@@ -343,12 +344,30 @@
     
     .form--message {
         width: 100%;
+        min-width: 32rem;
         max-width: 60rem;
         height: 12rem;
+        max-height: 60rem;
         margin: 2.6rem auto;
-        border-left: .1rem solid var(--light-blue);
-        border-right: .1rem solid var(--light-blue);
-        border-radius: .6rem;
+        padding-left: .8rem;
+        padding-top: .8rem;
+        font-size: 1.8rem;
+        font-weight: 100;
+        font-family: 'Space Grotesk', sans-serif;
+        color: var(--dark-blue);
+        border: none;
+        outline: none;
+    }
+    
+    textarea::placeholder {
+        padding-left: .8rem;
+        color: var(--light-gray);
+        transition: all .7s;
+    }
+    
+    textarea:focus::placeholder {
+        transform: translateX(-100%);
+        transition: all .5s;
     }
     
     .form--email {
@@ -367,6 +386,6 @@
         border-bottom: 1px solid var(--light-blue);
     }
     
-    .contact-container__form .button {
-        margin: 2.6rem auto;
+    .form--button-send {
+        margin: 0 auto;
     }

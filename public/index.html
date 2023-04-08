@@ -124,16 +124,20 @@
                 <label class="form--name" for="name">
                     <span>Hola Cris,</span>
                     <span>mi nombre es</span>
-                    <input type="text" id="name" placeholder="Escribe tu nombre...">
+                    <input type="text" id="name" placeholder="Escribe tu nombre..." required>
                 </label>
-                <textarea class="form--message" name="message" id="message" minlength="2" maxlength="300" placeholder="Escribe tu mensaje...">
+                <textarea class="form--message" name="message" id="message" minlength="2" maxlength="300" placeholder="Mensaje*" required>
                 </textarea>
                 <label class="form--email" for="email">
                     <span>No olvides el correo...</span>
-                    <input type="email" id="email" placeholder="correo@ejemplo.com">
+                    <input type="email" id="email" placeholder="correo@ejemplo.com" required>
                 </label>
-                <input class="button" type="submit">
+                <div class="form--button-send button">
+                    <span></span>
+                    <input class="button--action" type="submit">
+                </div>
             </form>
+
         </section>
     </main>
 </body>
