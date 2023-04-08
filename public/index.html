@@ -84,22 +84,58 @@
                         </div>
                     </div>
                 </a>
+                <a class="slider__card" href="#">
+                    <div class="slider__card--data">
+                        <div class="data--name">
+                            <h3>Luis Fernanda</h3>
+                        </div>
+                        <div class="data--detail">
+                            <p class="detail--product">Producto: <span>Aplicación</span></p>
+                            <p class="detail--year">Año: <span>2023</span></p>
+                        </div>
+                    </div>
+                </a>
             </section>
         </section>
-        <section class="main--contact-container">
-            <p>
-                Si me querés dar un saludo, podes hacerlo a través de mis redes sociales, o podes envairme un mensaje con el formulario que hay acá abajo.
-            </p>
-            <form action="">
-                <input type="text">
-                <input type="email">
-                <input type="text">
+        <section class="contact-container">
+            <div class="contact-container__greeting">
+                <p class="greeting--text">
+                    Si me querés dar un saludo, podés hacerlo a través de mis redes sociales o envíame un mensaje con el siguiente formulario.
+                </p>
+                <ul class="greeting--social-media">
+                    <li>
+                        <a href="https://github.com/CrisdCor" target="_blank">
+                            <img src="../src/assets/icons/github-cyan.png" alt="logo de github">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/crisd_cor/" target="_blank">
+                            <img src="../src/assets/icons/instagram-cyan.png" alt="logo de instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/CristianCorra11" target="_blank">
+                            <img src="../src/assets/icons/twitter-cyan.png" alt="logo de twitter">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <form class="contact-container__form" action="">
+                <label class="form--name" for="name">
+                    <span>Hola Cris,</span>
+                    <span>mi nombre es</span>
+                    <input type="text" id="name" placeholder="Escribe tu nombre...">
+                </label>
+                <textarea class="form--message" name="message" id="message" minlength="2" maxlength="300" placeholder="Escribe tu mensaje...">
+                </textarea>
+                <label class="form--email" for="email">
+                    <span>No olvides el correo...</span>
+                    <input type="email" id="email" placeholder="correo@ejemplo.com">
+                </label>
+                <input class="button" type="submit">
             </form>
-            <input type="submit ">
         </section>
     </main>
-
-
 </body>
 
 </html>
