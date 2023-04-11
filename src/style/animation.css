@@ -1,0 +1,35 @@
+.openMenu{
+    transition: all .5s;
+    animation: animationMenu 1s ease-in-out forwards;
+}
+
+@keyframes animationMenu {
+    0%{
+        left: -100%;
+        opacity: 0;
+    }
+    100%{
+        left: 0;
+    }
+
+  }
+
+  .openMenu a{
+    animation: animationMenuAnchor 1.3s ease-in-out infinite ;
+}
+
+@keyframes animationMenuAnchor {
+    0%{
+        bottom: -100%;
+    }
+    40%{
+        bottom: -100%;
+    }
+
+    100%{
+        transform: translateY(100%);
+    }
+
+  }
+
+  

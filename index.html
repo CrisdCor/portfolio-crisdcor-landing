@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./src/style/main.css">
     <title>Cristian Corrales</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,18 +14,38 @@
 
 <body>
     <header>
-        <div class="header--button-menu">
-            <p>MENU</p>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <figure>
-            <img src="./src/assets/logos/logo-sm-white.png" alt="Logo de Cristian">
-        </figure>
-
+            <div class="header--button-menu">
+                <p>MENU</p>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <figure class="header--logo">
+                <img src="./src/assets/logos/logo-sm-white.png" alt="Logo de Cristian">
+            </figure>
     </header>
+    <menu class="menu">
+        <ul class="menu--navbar">
+            <li>
+                <a href="#">INICIO</a>
+                <span></span>
+            </li>
+            <li>
+                <a href="#">ACERCA DE</a>
+                <span></span>
+            </li>
+            <li>
+                <a href="#">PROYECTOS</a>
+                <span></span>
+            </li>
+            <li>
+                <a href="#contact">CONTACTO</a>
+                <span></span>
+            </li>
+
+        </ul>
+    </menu>
     <main>
         <section class="main--home-container">
             <h1>Cris Corrales</h1>
@@ -120,7 +140,7 @@
                     </li>
                 </ul>
             </div>
-            <form class="contact-container__form" action="">
+            <form id="contact" class="contact-container__form" action="">
                 <label class="form--name" for="name">
                     <span>Hola Cris,</span>
                     <span>mi nombre es</span>
