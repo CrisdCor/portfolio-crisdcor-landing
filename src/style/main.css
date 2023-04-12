@@ -8,6 +8,8 @@
     @import url("./global.css");
     @import url("./vars.css");
     @import url("./animation.css");
+    @import url("./button-menu.css");
+
     header {
         z-index: 5000;
         position: absolute;
@@ -17,82 +19,7 @@
         padding: 0 3rem;
         display: flex;
         justify-content: space-between;
-        align-items: center;
-    }
-    
-    .header--button-menu {
-        height: 2.6rem;
-        width: 4.2rem;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-    }
-    
-    .header--button-menu p {
-        font-size: 1.3rem;
-        color: var(--light-gray);
-        opacity: 0;
-        transition: all .6s;
-    }
-    
-    .header--button-menu:hover p {
-        opacity: 1;
-        transition: all .6s;
-        transition-delay: .2s;
-    }
-    
-    .header--button-menu span {
-        height: 0.2rem;
-        position: absolute;
-        background: var(--white);
-        border-radius: 0.5rem;
-        transition: all .5s;
-    }
-    
-    .header--button-menu span:nth-child(2) {
-        top: 0;
-        left: 0;
-        width: 3rem;
-    }
-    
-    .header--button-menu:hover span:nth-child(2) {
-        transform: scaleX(1.3);
-        transition: all .5s;
-    }
-    
-    .header--button-menu span:nth-child(3) {
-        top: 1.2rem;
-        left: 1.8rem;
-        width: 2.0rem;
-    }
-    
-    .header--button-menu:hover span:nth-child(3) {
-        transform: translateX(1.8rem) scaleX(0.1) scaleY(6);
-        transition: all .5s;
-    }
-    
-    .header--button-menu span:nth-child(4) {
-        bottom: 0;
-        left: 0;
-        width: 3.0rem;
-    }
-    
-    .header--button-menu:hover span:nth-child(4) {
-        transform: translateX(1.0rem);
-        transition: all .5s;
-    }
-    
-    .header--button-menu span:nth-child(5) {
-        top: 1.2rem;
-        left: 0.9rem;
-        width: 0.5rem;
-    }
-    
-    .header--button-menu:hover span:nth-child(5) {
-        transform: translateX(-1.6rem) scaleX(0.7);
-        transition: all .5s;
+        align-items: center;    
     }
     
     header .header--logo {
