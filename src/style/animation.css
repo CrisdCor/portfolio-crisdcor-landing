@@ -1,4 +1,4 @@
-.openMenu{
+.open-menu{
     transition: all .5s;
     animation: animationMenu 1s ease-in-out forwards;
 }
@@ -14,20 +14,17 @@
 
   }
 
-  .openMenu a{
-    animation: animationMenuAnchor 1.3s ease-in-out infinite ;
+  .open-menu ul li a{
+    animation: openNavbarAnimated 1s ease-in-out forwards ;
+    animation-delay: .5s;
 }
 
-@keyframes animationMenuAnchor {
+@keyframes openNavbarAnimated {
     0%{
-        bottom: -100%;
+        transform: translateY(50px);
     }
-    40%{
-        bottom: -100%;
-    }
-
     100%{
-        transform: translateY(100%);
+        transform: translateY(0);
     }
 
   }
