@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/style/main.css">
+    <link rel="stylesheet" href="./src/style/tablet.css" media="(min-width: 720px)">
     <title>Cristian Corrales</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,16 +15,16 @@
 
 <body>
     <header>
-            <div class="header--button-menu">
-                <p class="button-menu--text">MENÚ</p>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <figure class="header--logo">
-                <img src="./src/assets/logos/logo-sm-white.png" alt="Logo de Cristian">
-            </figure>
+        <div class="header--button-menu">
+            <p class="button-menu--text">MENÚ</p>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <figure class="header--logo">
+            <img src="./src/assets/logos/logo-sm-white.png" alt="Logo de Cristian">
+        </figure>
     </header>
     <menu class="menu close-menu">
         <ul class="menu--navbar">
@@ -32,11 +33,11 @@
                 <span></span>
             </li>
             <li>
-                <a href="#">ACERCA DE</a>
+                <a href="#about">SOBRE MI</a>
                 <span></span>
             </li>
             <li>
-                <a href="#">PROYECTOS</a>
+                <a href="#projects">PROYECTOS</a>
                 <span></span>
             </li>
             <li>
@@ -48,10 +49,12 @@
     </menu>
     <main>
         <section id="home" class="main--home-container">
-            <h1>Cris Corrales</h1>
-            <p>Profesional en mercadeo / <br> Desarrollador Frontend - UX <br> [En formación]</p>
+            <div class="home-container--text">
+                <h1>Cris Corrales</h1>
+                <p>Profesional en mercadeo / <br> Desarrollador Frontend - UX <br> [En formación]</p>
+            </div>
         </section>
-        <section class="main--about-me">
+        <section id="about" class="main--about-me">
             <div class="section-info-container">
                 <h2 class="title">PROFESIONAL EN MERCADEO
                     <br>ESPECIALISTA EN PROYECTOS
@@ -117,7 +120,7 @@
                 </a>
             </section>
         </section>
-        <section class="contact-container">
+        <section id="contact" class="contact-container">
             <div class="contact-container__greeting">
                 <p class="greeting--text">
                     Si me querés dar un saludo, podés hacerlo a través de mis redes sociales o envíame un mensaje con el siguiente formulario.
@@ -138,8 +141,8 @@
                             <img src="./src/assets/icons/twitter-cyan.png" alt="logo de twitter">
                         </a>
                     </li>
-                </ul>div>
-            <form id="contact" class="contact-container__form" action="">
+                </ul>
+            <form class="contact-container__form" action="">
                 <label class="form--name" for="name">
                     <span>Hola Cris,</span>
                     <span>mi nombre es</span>
@@ -147,7 +150,7 @@
                 </label>
                 <textarea class="form--message" name="message" id="message" minlength="2" maxlength="300" placeholder="Mensaje*" required></textarea>
                 <label class="form--email" for="email">
-                    <span>No olvides el correo...</span>
+                    <span>No olvides tu correo...</span>
                     <input type="email" id="email" placeholder="correo@ejemplo.com" required>
                 </label>
                 <div class="form--button-send button">

@@ -1,0 +1,9 @@
+.home-container--text{
+    left: 5.2rem;
+    transform: scale(1.5);
+    transform-origin: left;
+}
+
+.section-info-container{
+    margin-right: 26rem;
+}

@@ -14,12 +14,12 @@
         z-index: 5000;
         position: absolute;
         width: 100%;
+        min-width: 32rem;
         height: 6rem;
-        margin: 0 auto;
-        padding: 0 3rem;
+        padding: 0 3.6rem;
         display: flex;
         justify-content: space-between;
-        align-items: center;    
+        align-items: center;
     }
     
     header .header--logo {
@@ -40,8 +40,9 @@
         top: 0;
         left: 0;
         width: 100%;
+        min-width: 32rem;
         height: 100vh;
-        padding: 12rem 4.6rem;
+        padding: 12rem 2.8rem;
         background: var(--background-menu);
         
     }
@@ -96,20 +97,23 @@
         color: var(--white);
     }
 
-    
-    main {
-        width: 100%;
-    }
-    
     .main--home-container {
+        position: relative;
         width: 100%;
-        max-width: 120rem;
+        max-width: 144rem;
+        min-width: 32rem;
         height: 100vh;
         margin: 0 auto;
-        padding: 26rem 4rem .8rem 4rem;
+        display: grid;
+    }
+
+    .home-container--text{
+        position: absolute;
+        top: 40%;
+        left: 2.6rem;
     }
     
-    .main--home-container h1 {
+    .home-container--text h1 {
         position: relative;
         font-size: 4.2rem;
         color: var(--white);
@@ -130,7 +134,7 @@
         0% {
             opacity: 1;
         }
-        50% {
+        30% {
             opacity: 0;
         }
     }
@@ -142,12 +146,19 @@
         color: var(--light-gray);
     }
     
+
+
+    .home-container--image img{
+        width: 100%;
+    }
+
     .main--about-me {
         width: 100%;
+        max-width: 144rem;
+        min-width: 32rem;
         height: auto;
-        max-width: 120rem;
+        padding: 2.6rem;
         margin: 0 auto;
-        padding: 2.6rem 0;
         background-image: url("../assets/images/background-about-me-shape.png");
         background-size: auto;
         background-repeat: no-repeat;
@@ -155,7 +166,9 @@
     }
     
     .section-info-container {
-        width: 36rem;
+        width: 100%;
+        max-width: 56rem;
+        min-width: calc(32rem - 5.2rem);
         height: auto;
         margin: 0 auto;
         padding: 1.8rem;
@@ -195,35 +208,42 @@
     
     .projects-container {
         width: 100%;
-        height: auto;
+        min-width: 32rem;
+        height: 100vh;
         padding: 2.6rem 0;
-        background: var(--white);
+        background: var(--white-gradient);
     }
     
     .projects-container__title {
-        width: 90%;
+        width: 100%;
+        max-width: 144rem;
         height: auto;
-        margin: 0 auto 3.2rem;
+        margin: 0 auto;
+        padding-left: 2.6rem;
         font-size: 2.8rem;
     }
 
     .projects-container__slider{
         width: 100%;
-        height: 36rem;
+        max-width: 144rem;
+        min-width: 32rem;
+        height: auto;
+        margin: 0 auto;
         display: flex;
-        overflow-x: scroll;
-        overscroll-behavior: contain;
-        scroll-snap-type: x proximity;
+        flex-wrap: wrap;
+        column-gap: 1.8rem;
+        transition: all .5s;
+
+
     }
 
     .slider__card {
         position: relative;
-        scroll-snap-align: center;
         width: 65%;
         min-width: 28rem;
         max-width: 30rem;
-        height: auto;
-        margin: 1.8rem 2.6rem;
+        height: 30rem;
+        margin: 1.8rem auto;
         display: block;
         background-image: url("../assets/images/coming-soon-dummie.jpg");
         background-size: cover;
@@ -260,16 +280,21 @@
     }
     
     .contact-container {
+        /* position: relative; */
         width: 100%;
+        max-width: 144rem;
+        min-width: 32rem;
         height: auto;
-        padding-bottom: 4.8rem;
+        margin: 0 auto;
+        padding: 5.2rem 2.6rem 3.8rem 2.6rem;
+
     }
     
     .contact-container__greeting {
-        width: 80%;
-        max-width: 60rem;
+        width: 100%;
+        max-width: 80rem;
         height: auto;
-        margin: 5.2rem auto;
+        margin: 0 auto;
     }
     
     .greeting--text {
@@ -278,6 +303,7 @@
         margin-bottom: 1.8rem;
         font-size: 1.8rem;
         font-weight: 100;
+        text-align: center;
         color: var(--light-gray);
     }
     
@@ -292,10 +318,10 @@
     .greeting--social-media li {
         width: 2.6rem;
         height: 100%;
+        display: inline-block;
     }
     
     .greeting--social-media li a {
-        display: inline-block;
         width: 2.6rem;
         height: 2.6rem;
         opacity: .6;
@@ -313,10 +339,10 @@
     
     .contact-container__form {
         width: 100%;
-        max-width: 60rem;
+        max-width: 80rem;
         height: auto;
         margin: 0 auto;
-        padding: 4.8rem 2.6rem;
+        padding: 2.6rem 0;
         display: flex;
         flex-direction: column;
     }
@@ -346,8 +372,6 @@
     
     .form--message {
         width: 100%;
-        min-width: 32rem;
-        max-width: 60rem;
         height: 12rem;
         max-height: 60rem;
         margin: 2.6rem auto;
