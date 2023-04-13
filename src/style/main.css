@@ -212,6 +212,7 @@
         height: 100vh;
         padding: 2.6rem 0;
         background: var(--white-gradient);
+        overflow-y: scroll;
     }
     
     .projects-container__title {
