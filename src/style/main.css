@@ -243,11 +243,11 @@
         width: 65%;
         min-width: 28rem;
         max-width: 30rem;
-        height: 30rem;
+        height: 36rem;
         margin: 1.8rem auto;
         display: block;
-        background-image: url("../assets/images/coming-soon-dummie.jpg");
-        background-size: cover;
+        background-image: url("../assets/images/reproductor-design.png");
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
     }
