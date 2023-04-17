@@ -29,4 +29,19 @@
 
   }
 
-  
+.section-info-container{
+    animation: startInfoAboutMe 1s ease-in-out forwards;
+}
+
+@keyframes startInfoAboutMe {
+    0%{
+        transform: translateX(-100%);
+    }
+    60%{
+        transform: translateX(10%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+
+  }
